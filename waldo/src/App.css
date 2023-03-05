@@ -1,0 +1,148 @@
+/* color palette https: //www.canva.com/colors/color-palettes/foil-covered-sneakers/ */
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+a,
+img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-nav{
+  width: 100%;
+  background-color: #3E54AC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div{
+  display:grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.top-nav{
+  width:100%;
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+
+.waldo-image{
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: 100%;
+  padding-bottom: 2%;
+}
+
+footer{
+  background-color: #E9EAEC;
+  color: #333652;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Need to change names of Nav Items  */
+
+#bottom-nav{
+  /* height: 50px;
+  margin: 8px;
+  padding: 8px;  */
+}
+
+#bottom-nav ul{
+  padding: 8px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#bottom-nav li{
+  height: 20px;
+  width:150px;
+  outline: 2px solid #900;
+  margin: 8px;
+  position: relative;
+  
+}
+
+#bottom-nav a{
+  display:block;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-nav span{
+  position: absolute;
+  top: -250px;
+  left: 0px;
+  background-color: #E9EAEC;
+  z-index: -5;
+  opacity: 0;
+  transition: 0.7s;
+  height: 250px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#bottom-nav li:hover span{
+  opacity: 1;
+  z-index: 5;
+}
+
+.robin-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: 90%;
+  padding-bottom: 2%;
+}
