@@ -7,12 +7,12 @@ export default function Navbar() {
 
     const [timer, setTimer] = React.useState(0)
 
-    const MINUTE_MS = 1000;
+    const SECOND_MS = 1000;
     React.useEffect(() => {
         const interval = setInterval(() => {
             console.log('Logs every Second');
             setTimer(prevTimer => prevTimer + 1)
-        }, MINUTE_MS);
+        }, SECOND_MS);
 
         return () => clearInterval(interval); 
     }, [])
@@ -28,7 +28,7 @@ export default function Navbar() {
                     <li><a href="">Johnny Test</a><span><img src={Test} className="robin-image" /></span></li>
                 </ul>
             </nav>
-            <h3 id="timer">{timer}</h3>
+            <h3 id="timer">Time: {timer}</h3>
             {/* Make these sideways list items */}
         </footer>
     )
