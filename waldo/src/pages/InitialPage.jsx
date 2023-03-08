@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import '../App.css'
 import Navbar from '../components/Navbar'
-import Picture from '../components/Picture'
-import Footer from '../components/Footer'
+import { useNavigate } from "react-router-dom"
 
 
 function InitialPage() {
+    let navigate = useNavigate();
 
     return (
         // To do:
-        // Have to make #name-form extend full width of parent
+        // Add submit button 
+        // Change to main game page on submit button click
 
         <div className="initial-page">
             <Navbar /> 
@@ -17,6 +18,7 @@ function InitialPage() {
                 <form id="name-form">        
                     <label for="css">What is your name?</label>
                     <input type="text" id="name" name="name-input" placeholder="Please Enter Your Name"/>
+                    <button onClick={() => {navigate("/game")}}>Submit</button>
                 </form>
             </div>
         </div>

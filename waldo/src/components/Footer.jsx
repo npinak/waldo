@@ -10,7 +10,6 @@ export default function Navbar() {
     const SECOND_MS = 1000;
     React.useEffect(() => {
         const interval = setInterval(() => {
-            console.log('Logs every Second');
             setTimer(prevTimer => prevTimer + 1)
         }, SECOND_MS);
 
