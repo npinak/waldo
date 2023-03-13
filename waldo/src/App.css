@@ -89,6 +89,7 @@ img {
 
 .image-container{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -102,12 +103,13 @@ img {
   width: 80%;
   height: 100%;
   padding-bottom: 2%;
+  cursor: crosshair;
 }
 
 footer{
   background-color: #E9EAEC;
   color: #333652;
-  height: 60px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,4 +185,9 @@ footer{
 
 footer h2{
   margin-left: 100px;
+}
+
+.dropdown-menu{
+  overflow: 'hidden'
+
 }

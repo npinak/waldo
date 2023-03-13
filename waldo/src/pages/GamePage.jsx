@@ -12,7 +12,7 @@ function GamePage() {
             <div className='navbar'>
                 <Navbar />
             </div>
-            <Picture />
+                <Picture />
             <Footer />
         </div>
 

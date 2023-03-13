@@ -3,7 +3,7 @@ import Robin from '../images/robin.webp'
 import Flinstone from '../images/flinstone.webp'
 import Test from '../images/johnny-test.webp'
 
-export default function Navbar() {
+export default function Footer() {
 
     const [timer, setTimer] = React.useState(0)
 
